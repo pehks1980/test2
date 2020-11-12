@@ -6,8 +6,7 @@
 
 1 Клонирование репозитория.
 
-    -Исходная папка:
-    
+    -исходная папка:
     mkdir start_mag 
     
     git clone https://github.com/pehks1980/test2.git start_mag
@@ -51,7 +50,8 @@
     
     docker run -d -p 5672:5672 rabbitmq
     
-    -Иначе необходимо изменить настройку сервера брокера в start_mag/settings.py
+    -в случае другого брокер сервера необходимо сделать его установку и 
+    изменить настройку сервера брокера в start_mag/settings.py:
     
     CELERY_BROKER_URL='pyamqp://guest@localhost/'
 
@@ -70,7 +70,7 @@
     
     -pdf файл накладной сохраняется в папке:
     
-    -staticfiles/pdf (имя файла выбирается сл.набором символов)
+    staticfiles/pdf (имя файла выбирается сл.набором символов)
 
 
 ## Test (smoketest)
