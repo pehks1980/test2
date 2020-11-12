@@ -1,0 +1,38 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<button class="btn btn-round form-control last">
+        <a href="{% url 'main' %}" class="">
+            на главную
+        </a>
+</button>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Товар</th>
+          <th>Цена,шт</th>
+          <th>Количество</th>
+          <th>Сумма по строке</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in basket %}
+          <tr>
+
+            <td>{{ item.product.name }}</td>
+            <td>{{ item.product.price_rozn }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.sum_price }}</td>
+            <td> <a href="{% url 'del' item.pk %}">удалить из корзины</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+
+
+{% endblock %}

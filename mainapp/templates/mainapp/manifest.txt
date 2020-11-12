@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>Имя клиента: {{ client_name }}</p>
+
+<p>Номер заказа: {{ order_no }}</p>
+
+<p>Адрес доставки: {{ address }}</p>
+
+<p>(c)2020 PEHKS1980@GMAIL.COM</p>
+<p><a href="https://github.com/pehks1980">github: pehks1980</a></p>
+
+</body>
+</html>

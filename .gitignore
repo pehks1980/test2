@@ -1,0 +1,8 @@
+mainapp/__pycache__/
+__pycache__/
+db.sqlite3
+*.log
+mainapp/migrations/
+maap/__pycache__/
+start_mag/__pycache__/
+env/

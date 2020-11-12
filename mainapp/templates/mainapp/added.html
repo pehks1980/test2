@@ -1,0 +1,23 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="h2 text-center head">
+                Товар добавлен в корзину
+            </div>
+
+<button class="btn btn-round form-control last">
+        <a href="{% url 'products' %}" class="">
+            обратно
+        </a>
+</button>
+<button class="btn btn-round form-control last">
+        <a href="{% url 'basket' %}" class="">
+            в корзину
+        </a>
+</button>
+
+{% endblock %}
